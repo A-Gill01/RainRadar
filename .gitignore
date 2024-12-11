@@ -1,4 +1,4 @@
 .DS_Store
-config.js
+codekey.env
 node_modules/
 #DS_Store file and Google Maps API Key (config.js) to ignore.

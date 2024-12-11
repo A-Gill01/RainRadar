@@ -118,9 +118,11 @@
 			<div class="container">
 				<div class="welcome-hero-txt">
 					<h2>Rain Radar</h2>
-					<p>
-						Please enter your address below:
-					</p>
+					<%if (locals.dateValue) {%>
+						<p><%=locals.locationData%></p>
+					<%} else{%>
+						<p>Please enter your address below:</p>
+					<%}%>
 				</div>
 				<div class="welcome-hero-serch-box">
 					<div class="welcome-hero-form">

@@ -4,7 +4,11 @@ import bodyParser from "body-parser";
 import path from "node:path"
 import {dirname} from "path";
 import {fileURLToPath} from "url";
-import config from "./config.js";
+import dotenv from "dotenv";
+
+dotenv.config({path:"./codekey.env"});
+
+const mapsapiKey = process.env.MAPKEY;
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const app = express();
 const port = 3000;
@@ -25,7 +29,7 @@ app.post("/post-address", async (req, res) => {
     const reqData = req.body["addressEntry"];
     const addressData = `?address=${reqData}`;
     try {
-        const mapData = await axios.post(mapsapiURL + addressData + config); /*Post request to capture address entry/form data. It is then sent to the Google Maps API to be converted into and received as Latitude and Longitude coordinates.*/
+        const mapData = await axios.post(mapsapiURL + addressData + `&key=${mapsapiKey}`); /*Post request to capture address entry/form data. It is then sent to the Google Maps API to be converted into and received as Latitude and Longitude coordinates.*/
         const coordinateData = mapData.data.results[0].geometry.bounds.northeast; /*Latitude and Longitude coordinates stored in "coordinateData" variable*/
         const latitudeData = JSON.stringify(coordinateData.lat);
         const longitudeData = JSON.stringify(coordinateData.lng);
@@ -34,6 +38,7 @@ app.post("/post-address", async (req, res) => {
         const weekdayArray = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]; /*Array used to determine the day of the week (i.e. monday, thursday, etc.)*/
         res.render("index.ejs", {
             
+            locationData: reqData,
             dateValue: weatherVar.time,
             dayArray: weekdayArray,
             maxTemp: weatherVar.temperature_2m_max,
