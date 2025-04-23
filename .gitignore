@@ -1,4 +1,5 @@
-.DS_Store
-codekey.env
+#Local system files
+*.DS_Store
+
+#Locally installed node.js moduiles
 node_modules/
-#DS_Store file and Google Maps API Key (config.js) to ignore.

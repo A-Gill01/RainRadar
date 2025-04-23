@@ -524,7 +524,8 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.navbar.bootsnav ul.nav > li > a{
-        padding: 30px 15px;
+        padding-left: 30px;
+        padding-right: 0px;
         font-weight: 600;
     }
     
@@ -1001,15 +1002,22 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
         float: none;
         display: block;
         text-align: center;
-        padding-left: 30px;
         padding-right: 30px;
+        margin-left: 0px;
+        max-height: 60px;
+        width: 100%;
     }
-    
+    nav.navbar.bootsnav .navbar-header form {
+        position: sticky;
+        left: 0;
+        float: left;
+    }
     nav.navbar.bootsnav .navbar-toggle {
         display: inline-block;
-        float: left;
-        margin-right: -200px;
-        margin-top: 10px;
+        position: sticky;
+        right: 15px;
+        margin-top: auto;
+        margin-bottom: auto;
     }
     
     nav.navbar.bootsnav .navbar-collapse {
@@ -1018,24 +1026,27 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     }
     
     nav.navbar.bootsnav.no-full .navbar-collapse{
-        max-height: 350px;
-        overflow-y: auto !important;
+        max-height: 60px;
+        overflow-y: visible !important;
     }
     
+    /*
     nav.navbar.bootsnav .navbar-collapse.collapse {
         display: none !important;
     }
-    
+    */
+
     nav.navbar.bootsnav .navbar-collapse.collapse.in {
         display: block !important;
+        max-height:max-content;
     }
     
     nav.navbar.bootsnav .navbar-nav {
         float: none !important;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin: 0px -15px;
+        max-height: fit-content;
+        background-color: white;
     }
+    @media (max-width:992px) {nav.navbar.bootsnav .navbar-nav {display: none;};}
     
     nav.navbar.bootsnav .navbar-nav > li {
         float: none;
@@ -1280,7 +1291,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
     /* Tabs
     =================================*/ 
     nav.navbar.bootsnav .megamenu-content.tabbed{
-        padding-left: 0 !mportant;
+        padding-left: 0 !important;
     }
     
     nav.navbar.bootsnav .tabbed > li{
@@ -1374,7 +1385,7 @@ body.on-side .wrap-sticky nav.navbar.bootsnav.sticked{
 
 @media (max-width: 767px) {
     nav.navbar.bootsnav .navbar-header {
-        padding-left: 15px;
+        
         padding-right: 15px;
     }
     
