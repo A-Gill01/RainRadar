@@ -8,3 +8,4 @@ _RainRadar Homepage_
 
 By clicking on the current location button, the ip address of the user's device is picked up and converted into geographic coordinates (via a geolocation api). These coordinates are then send to a second and public weather api that returns the local weather data for that geographic location. RainRadar uses this data to provide commute recommendations to the user.
 
+![location](public/images/location.gif)
