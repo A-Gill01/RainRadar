@@ -28,4 +28,7 @@ _RainRadar Weather Data Demo_
 ---
 
 ## Technologies Used
-HTML, CSS(Bootstrap/Grid/Flexbox), Javascript (Node.js/Express.js/Axios)
+HTML, CSS(Bootstrap/Grid/Flexbox), Javascript (Node.js/Express.js/Axios), RESTful API Architechture
+
+## Getting Started
+
