@@ -31,4 +31,12 @@ _RainRadar Weather Data Demo_
 HTML, CSS(Bootstrap/Grid/Flexbox), Javascript (Node.js/Express.js/Axios), RESTful API Architechture
 
 ## Getting Started
-
+To begin using RainRadar on your local machine, do the following:
+1. Download and install node.js on your device: <https://nodejs.org/>
+2. Clone the RainRadar Repository: `git clone https://github.com/A-Gill01/RainRadar.git` (HTTPS)
+3. cd to the project's working directory.
+4. Install all project dependancies: `npm i`
+5. Obtain an API key by registering a free account at `https://myprojects.geoapify.com/login`. Then add your api key into the index.js file (src) in the "geoapiKey" field (line 11).
+6. Obtain a second API key by registering a free account at `https://app.ipgeolocation.io/signup`. Then add your api key into the index.js file (src) in the "ipgeoapiKey" field (line 12).
+7. Start the server on your device using `nodemon index.js`.
+8. Open your device's browser and navigate to <http://localhost:3000>
