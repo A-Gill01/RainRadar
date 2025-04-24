@@ -22,5 +22,5 @@ _RainRadar Address Field Demo_
 
 All relevant statistical/weather data is rendered to the user along with commute recommendations specific to the weather conditions present during that day of the week. The icons on each box representing a day of the week give a general idea of what kind of weather to expect, and the user can click on the box for more specific information and the commute recommendations for that day.
 
-![weather data](public/images/addressinput.gif)
+![weather data](public/images/weatherdata.gif)
 _RainRadar Weather Data Demo_
