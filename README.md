@@ -24,3 +24,8 @@ All relevant statistical/weather data is rendered to the user along with commute
 
 ![weather data](public/images/weatherdata.gif)
 _RainRadar Weather Data Demo_
+
+---
+
+## Technologies Used
+HTML, CSS(Bootstrap/Grid/Flexbox), Javascript (Node.js/Express.js/Axios)
