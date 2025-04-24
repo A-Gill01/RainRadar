@@ -1,5 +1,5 @@
-#Local system files
+# misc
 *.DS_Store
 
-#Locally installed node.js moduiles
+# dependencies
 node_modules/
