@@ -10,3 +10,7 @@ By clicking on the current location button, the ip address of the user's device 
 
 ![location](public/images/location.gif)
 _RainRadar Current Location Demo_
+
+---
+
+Alternatively, the user can type an address (free-form and global) into the text box instead of clicking the current location button, and press enter. The typed address is then used to generate the geographic coordinates that allows RainRadar to provide commute recommendations and weather data to the user.
