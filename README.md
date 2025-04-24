@@ -8,9 +8,12 @@ _RainRadar Homepage_
 
 By clicking on the current location button, the ip address of the user's device is picked up and converted into geographic coordinates (via a geolocation api). These coordinates are then send to a second and public weather api that returns the local weather data for that geographic location. RainRadar uses this data to provide commute recommendations to the user.
 
-![location](public/images/location.gif)
+![locationbutton](public/images/location.gif)
 _RainRadar Current Location Demo_
 
 ---
 
 Alternatively, the user can type an address (free-form and global) into the text box instead of clicking the current location button, and press enter. The typed address is then used to generate the geographic coordinates that allows RainRadar to provide commute recommendations and weather data to the user.
+
+![address input](public/images/addressinput.gif)
+_RainRadar Address Field Demo_
