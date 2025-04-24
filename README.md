@@ -40,3 +40,6 @@ To begin using RainRadar on your local machine, do the following:
 6. Obtain a second API key by registering a free account at `https://app.ipgeolocation.io/signup`. Then add your api key into the index.js file (src) in the "ipgeoapiKey" field (line 12).
 7. Start the server on your device using `nodemon index.js`.
 8. Open your device's browser and navigate to <http://localhost:3000>
+
+## Challenges During Development
+During RainRadar's development, I personally found the styling and visual representation of the data a bit difficult to get right. The recommendations and logic aspects of the project were tedious but fairly straightforward to write, but the data itself had to be rendered in a very simple, clear, and user-friendly way. After drafting a few possible styles, I ended up with the current layout, which is very strightforward to use and has a color combination that attracts the eye well. 
